@@ -7,9 +7,22 @@ const popupPrev = document.querySelector(".popup__prev");
 const popupNext = document.querySelector(".popup__next");
 const burger = document.querySelector(".burger");
 const nav = document.querySelector(".nav-list");
+const closeMenu = document.querySelector(".close-btn");
 
 burger.addEventListener("click", () => {
   nav.classList.toggle("active");
+});
+
+closeMenu.addEventListener("click", () => {
+  nav.classList.remove("active");
+});
+document.addEventListener("click", (e) => {
+  const isClickInsideNav = nav.contains(e.target);
+  const isBurger = burger.contains(e.target);
+
+  if (!isClickInsideNav && !isBurger && nav.classList.contains("active")) {
+    nav.classList.remove("active");
+  }
 });
 
 photos.forEach((photo) => {
@@ -30,13 +43,11 @@ function openPopup(index) {
   currentIndex = index;
   popup_img.src = photos[currentIndex].src; // Ustawienie obrazu w pop-upie
   popup.classList.remove("hidden"); // Pokazanie pop-upu
-  document.addEventListener("keydown", handleKeyPress); // Dodanie obsługi klawiszy
 }
 
 // Funkcja zamykająca pop-up
 function closePopup() {
   popup.classList.add("hidden");
-  document.removeEventListener("keydown", handleKeyPress); // Usunięcie obsługi klawiszy
 }
 
 // Funkcja obsługi klawiszy
