@@ -44,14 +44,16 @@ header {
 }
 .header-container {
   width: 100%;
-  margin: 10px 10px 10px 20px;
+
   justify-content: space-between;
   border-radius: 20px;
   display: flex;
   align-items: center;
 }
 
-.headerh1 {
+.headerh1 a {
+  text-decoration: none;
+  color: inherit;
   text-align: left;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
@@ -221,7 +223,7 @@ nav ul li a:hover::after {
 #galeria,
 #kontakt {
   padding: 3rem 0;
-  text-align: justify;
+  text-align: left;
 }
 
 h2 {
@@ -440,4 +442,5 @@ footer {
   padding: 1rem 0;
   text-align: center;
   margin-top: 2rem;
+  position: relative;
 }
