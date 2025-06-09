@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apartament - Łebska Ostoja Piaskowa</title>
-    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
 </head>
@@ -12,21 +12,25 @@
 
     <!-- Nagłówek -->
     <header>
-        <div class="container">
-            <h1 class = "headerh1">Łebska Ostoja - Piaskowa</h1>
-            <!-- <button class="menu-toggle" aria-label="Otwórz menu">☰</button> -->
+        <div class="header-container">
+            <h1 class = "headerh1"><a href="#home">Łebska Ostoja - Piaskowa</a></h1>
             <nav>
+                
                 <ul class="nav-list">
-                    <li><a href="#home">Home
-
-                    </a></li>
+                    <li class="liheader"><button class="close-btn" id="closeMenu"> <i class="bi bi-x-circle"></i></button></li>
+                    <li class="liheader"><a href="#home">Home</a></li>
                     <li class="liheader"><a href="#apartament">Apartament</a></li>
                     <li class="liheader"><a href="#osiedle">Osiedle</a></li>
-                    <li class="liheader"><a href="#udogodnienia">Udogodnienia</a></li>
+                    <li class="liheader"><a href="#udogodnienia">Okolica</a></li>
                     <li class="liheader"><a href="#galeria">Galeria</a></li>
                     <li class="liheader"><a href="#kontakt">Kontakt</a></li>
+                    
                 </ul>
             </nav>
+
+            <button class="burger">
+                <i class="bi bi-list"></i>
+            </button>
         </div>
     </header>
 
@@ -175,21 +179,21 @@
             <h2>Galeria</h2>
             <div>
                         <ul class="gallery">
-                            <li class="photo"><img src="pokoj1.jpg" alt="Zdjęcie łazienki"></li>
-                            <li class="photo"><img src="poko2.jpg" alt="Zdjęcie apartamentu"></li>
-                            <li class="photo"><img src="pokoj7.jpg" alt="Zdjęcie sypialni"></li>
-                            <li class="photo"><img src="pokoj3.jpg" alt="Zdjęcie kuchni"></li>
-                            <li class="photo"><img src="pokoj6.jpg" alt="Zdjęcie łazienki"></li>
-                            <li class="photo"><img src="pokoj5.jpg" alt="Zdjęcie łazienki"></li>
-                            <li class="photo"><img src="pokoj4.jpg" alt="Zdjęcie łazienki"></li>
-                            <li class="photo"><img src="blok.jpg" alt="Zdjęcie łazienki"></li>
-                            <li class="photo"><img src="pingpong.jpg" alt="Zdjęcie łazienki"></li>
-                            <li class="photo"><img src="pilkarzyki.jpg" alt="Zdjęcie łazienki"></li>
-                            <li class="photo"><img src="gry.jpg" alt="Zdjęcie łazienki"></li>
-                            <li class="photo"><img src="basen.jpg" alt="Zdjęcie łazienki"></li>
-                            <li class="photo"><img src="piaskowa_galeria_4.webp" alt="Zdjęcie łazienki"></li>
-                            <li class="photo"><img src="piaskowa_galeria_7.webp" alt="Zdjęcie łazienki"></li>
-                            <li class="photo"><img src="piaskowa_galeria_9.webp" alt="Zdjęcie łazienki"></li>
+                            <li class="photo"><img src="gallery_photos/pokoj1.jpg" alt="Zdjęcie łazienki"></li>
+                            <li class="photo"><img src="gallery_photos/poko2.jpg" alt="Zdjęcie apartamentu"></li>
+                            <li class="photo"><img src="gallery_photos/pokoj7.jpg" alt="Zdjęcie sypialni"></li>
+                            <li class="photo"><img src="gallery_photos/pokoj3.jpg" alt="Zdjęcie kuchni"></li>
+                            <li class="photo"><img src="gallery_photos/pokoj6.jpg" alt="Zdjęcie łazienki"></li>
+                            <li class="photo"><img src="gallery_photos/pokoj5.jpg" alt="Zdjęcie łazienki"></li>
+                            <li class="photo"><img src="gallery_photos/pokoj4.jpg" alt="Zdjęcie łazienki"></li>
+                            <li class="photo"><img src="gallery_photos/blok.jpg" alt="Zdjęcie łazienki"></li>
+                            <li class="photo"><img src="gallery_photos/pingpong.jpg" alt="Zdjęcie łazienki"></li>
+                            <li class="photo"><img src="gallery_photos/pilkarzyki.jpg" alt="Zdjęcie łazienki"></li>
+                            <li class="photo"><img src="gallery_photos/gry.jpg" alt="Zdjęcie łazienki"></li>
+                            <li class="photo"><img src="gallery_photos/basen.jpg" alt="Zdjęcie łazienki"></li>
+                            <li class="photo"><img src="gallery_photos/piaskowa_galeria_4.webp" alt="Zdjęcie łazienki"></li>
+                            <li class="photo"><img src="gallery_photos/piaskowa_galeria_7.webp" alt="Zdjęcie łazienki"></li>
+                            <li class="photo"><img src="gallery_photos/piaskowa_galeria_9.webp" alt="Zdjęcie łazienki"></li>
 
                            
                             
